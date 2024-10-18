@@ -1,0 +1,188 @@
+[
+  {
+    "ContainingType": "back_end_assignment_2_jerad_beauregard.Controllers.J1",
+    "Method": "returnData",
+    "RelativePath": "api/J1/Delivedroid/Collisions={collisions}\u0026Deliveries={packages}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "collisions",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "packages",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "back_end_assignment_2_jerad_beauregard.Controllers.J12",
+    "Method": "remainingCupcakes",
+    "RelativePath": "api/J12/largeboxes={largeBoxes}\u0026smallboxes={smallBoxes}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "largeBoxes",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "smallBoxes",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "back_end_assignment_2_jerad_beauregard.Controllers.J2",
+    "Method": "addScoville",
+    "RelativePath": "api/J2/Peppers\u0026Ingredients={ingredients}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ingredients",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "back_end_assignment_2_jerad_beauregard.Controllers.J22",
+    "Method": "returnSpaces",
+    "RelativePath": "api/J22/parkingspaces={N}\u0026dayone={dayOne}\u0026daytwo={dayTwo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "N",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dayOne",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dayTwo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "back_end_assignment_2_jerad_beauregard.Controllers.J222",
+    "Method": "returnSpaces",
+    "RelativePath": "api/J222/parkingspaces={N}\u0026dayone={dayOne}\u0026daytwo={dayTwo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "N",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dayOne",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dayTwo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "back_end_assignment_2_jerad_beauregard.Controllers.J3",
+    "Method": "returnDays",
+    "RelativePath": "api/J3/N={input}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

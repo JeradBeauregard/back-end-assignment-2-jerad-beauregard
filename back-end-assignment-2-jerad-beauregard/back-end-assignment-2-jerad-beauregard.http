@@ -1,0 +1,6 @@
+@back_end_assignment_2_jerad_beauregard_HostAddress = http://localhost:5290
+
+GET {{back_end_assignment_2_jerad_beauregard_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
