@@ -38,6 +38,8 @@ namespace back_end_assignment_2_jerad_beauregard.Controllers
         /// </example>
 
 
+        /// example string :  5YY..Y.YY.Y.Y.Y..YY.YY...Y
+
         [HttpGet(template: "N={input}")]
 
         public List<int> returnDays(string input)
