@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("back-end-assignment-2-jerad-beauregard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0701e6d8e659abf10ced10ad5928d25de026180")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9731b3b7206658d35ded005f5ff2042e90d22948")]
 [assembly: System.Reflection.AssemblyProductAttribute("back-end-assignment-2-jerad-beauregard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("back-end-assignment-2-jerad-beauregard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

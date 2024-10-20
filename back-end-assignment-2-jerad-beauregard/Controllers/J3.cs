@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Reflection.PortableExecutable;
 
 
 namespace back_end_assignment_2_jerad_beauregard.Controllers
@@ -22,10 +23,10 @@ namespace back_end_assignment_2_jerad_beauregard.Controllers
         /// it then removes N from the chracter Array and stores the remainging informaton in a new array
         ///it then uses a for loop to count which days work the most initialized based on N
         /// the for loop does 5 at a time then removes the 5 it just counted before moving on in the array
-        /// next is the part im stuck on. I want the for loop to loop through the daycounts which are stored in an array
-        /// and add the max values to a list, using what i have it will work if it only has to output one value, however it wont 
-        /// loop around and add a second value in the case that two days are equal
-        /// please help i've spent hours on this
+        /// the next loop loops through the dayCounts array, if the count is equal to the maximum value of the dayCounts
+        /// it will add the index to a list
+        /// the list is return with the hghest value indexes, which represent the days with the most votes.
+      
         /// 
         /// </summary>
         /// <param name="input"></param>
@@ -33,8 +34,8 @@ namespace back_end_assignment_2_jerad_beauregard.Controllers
         /// a list of day(s) that are most available for the interested people
         /// </returns>
         /// <example>
-        /// GET : http://localhost:5290/api/J3/N=3YY.Y....Y..YYY. -> 4 THIS ONE WORKS
-        /// GET : http://localhost:5290/api/J3/N=5YY..Y.YY.Y.Y.Y..YY.YY...Y -4 [4,2] Completely wrong, is it adding the value or the index?
+        /// GET : http://localhost:5290/api/J3/N=3YY.Y....Y..YYY. -> 4 
+        /// GET : http://localhost:5290/api/J3/N=5YY..Y.YY.Y.Y.Y..YY.YY...Y - [2,5]
         /// </example>
 
 
@@ -88,18 +89,17 @@ namespace back_end_assignment_2_jerad_beauregard.Controllers
             int[] dayCounts = { dayOneCount, dayTwoCount, dayThreeCount, dayFourCount, dayFiveCount };
             List<int> daysList = new List<int>();
 
+            // used a list now instead of array because I learned lists can be added to dynamically
+
             for(int indexer = 0; indexer < dayCounts.Length; indexer++)
             {
 
-                //if (dayCounts[indexer] > dayCounts[0] && indexer >= dayCounts[1] && indexer >= dayCounts[2] && indexer >= dayCounts[3] && indexer >= dayCounts[4])
+
                 if(dayCounts[indexer] == dayCounts.Max())
                 {
-                    // It should add the index to the daysList list if the index value is equal to the highest value in the array
-                    // add i to list
+                   
 
-                  //  int index = dayCounts.indexOf(dayCounts[indexer]);
-
-                    daysList.Add(Array.IndexOf(dayCounts, indexer) + 1);
+                    daysList.Add(indexer + 1);
 
                 }
 
